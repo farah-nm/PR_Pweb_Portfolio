@@ -1,0 +1,196 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  header {
+    height: 100vh;
+    background: linear-gradient(180deg, #000428, #004e92);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  header p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  header a {
+    display: inline-block;
+    background: #ffc107;
+    color: #000;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  header a:hover {
+    background: #ffa000;
+  }
+  nav {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #007bff;
+  }
+  section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .about,
+  .projects,
+  .contact {
+    margin-bottom: 4rem;
+  }
+  .about {
+    text-align: center;
+  }
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .about p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  .projects h2,
+  .contact h2,
+  .organization h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .project-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 300px;
+  }
+  .project-item:hover {
+    transform: translateY(-5px);
+  }
+  .project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .project-item p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  .organization-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .organization-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 300px;
+  }
+  .organization-item:hover {
+    transform: translateY(-5px);
+  }
+  .organization-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .organization-item p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  .contact {
+    text-align: center;
+  }
+  .contact p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    background: #3244a7;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  footer p {
+    margin: 0;
+  }
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header p {
+    font-size: 1.2rem;
+  }
+  header a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .project-list, 
+  .organization-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item,
+  .organization-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}
