@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Hi, I'm Aisyah</h1>
+      <p>Passionate about solving interesting problems but not your relationship problem.</p>
+      <a href="#about">Get Started</a>
+    </header>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Project</a>
+      <a href="#organization">Organization</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate junior programmer and designer with a love for creating
+        innovative solutions to real-world problems. I specialize in web
+        development, UI/UX design, and creative projects.
+      </p>
+    </section>
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <img src="img/SIPAHU.png" alt="Project 1" />
+          <p><strong>SIPAHU:</strong> Website manajemen pencatatan transaksi pada Pabrik Tahu Saudara Jaya.</p>
+        </div>
+        <div class="project-item">
+          <img src="img/TaniAttire.jpg" alt="Project 2" />
+          <p>
+            <strong>Tani Attire:</strong> Aplikasi Desktop untuk manajemen transaksi jual beli dan sewa toko pertanian menggunakan C#.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="organization" class="organization">
+      <h2>Organization</h2>
+      <div class="organization-list">
+        <div class="organization-item">
+          <img src="img/al azhar.jpg" alt="Organization 1" />
+          <p><strong>UKM KI Al-Azhar Fasilkom:</strong> Pengurus divisi Kemuslimahan (Periode 2023 - 2024)</p>
+        </div>
+        <div class="organization-item">
+          <img src="img/Novo.jpg" alt="Organization 2" />
+          <p><strong>Novo Club Jember:</strong> Staff PDD pada Event Pemberdayaan Perempuan Disabilitas × HWDI (2025) </p>
+        </div>
+        <div class="organization-item">
+          <img src="img/laos.jpg" alt="Organization 3" />
+          <p><strong>UKM Laos Fasilkom:</strong> Anggota Laos periode 2024-2025</p>
+        </div>
+        <div class="organization-item">
+          <img src="img/peduly.jpg" alt="Organization 4" />
+          <p><strong>Peduly Jember:</strong> Volunteer in Sharing With Love: Workshop Breast Cancer With Lovepink</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: aisyahfarah849@gmail.com</p>
+      <p>Phone: +62 895-3495-00106</p>
+      <p>
+        GitHub:
+        <a href="https://github.com/farah-nm" target="_blank"
+          >github.com/farah-nm</a>
+        <br>
+        Linkedin:
+        <a href="https://www.linkedin.com/in/aisyah-hanum/" target="_blank">linkedin.id/aisyah</a>
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2025 My Portfolio by Aisyah Farah Hanum.</p>
+    </footer>
+    <script>
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(link.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
