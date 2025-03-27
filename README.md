@@ -14,3 +14,7 @@ Struktur Folder
 │── 📜 index.html # File utama HTML untuk portfolio 
 │── 📜 style.css # File CSS untuk styling tampilan 
 │── 📜 README.md # Dokumentasi proyek ini
+
+Cara menjalankan
+1. Clone Repository
+2. Buka file index.html di browser / gunakan Live Server di VS Code
