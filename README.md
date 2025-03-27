@@ -8,3 +8,5 @@ Teknologi yang Digunakan
 - CSS3 – Styling dan desain tampilan
 - JavaScript – Efek smooth scrolling
 
+Struktur Folder
+📂 portfolio-website │── 📂 img # Folder untuk menyimpan gambar proyek & organisasi │ ├── al azhar.jpg │ ├── laos.jpg │ ├── Novo.jpg │ ├── peduly.jpg │ ├── SIPAHU.png │ ├── TaniAttire.jpg │ │── 📜 index.html # File utama HTML untuk portfolio │── 📜 style.css # File CSS untuk styling tampilan │── 📜 README.md # Dokumentasi proyek ini
